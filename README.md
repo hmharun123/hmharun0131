@@ -84,3 +84,8 @@
   </div>
 </body>
 </html>
+<div class="buttons">
+  <a class="button" href="https://www.instagram.com/p/DIeAfFXT_oO/" target="_blank">
+    View My Instagram Post
+  </a>
+</div>
