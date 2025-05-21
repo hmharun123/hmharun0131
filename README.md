@@ -90,3 +90,8 @@
   </a>
 </div>
 <a href="https://www.tiktok.com/@user6071584366187" class="btn pink" target="_blank">TikTok</a>
+<div class="buttons">
+  <a class="button" href="https://wa.me/8801648131500?text=Hi,%20I%20want%20to%20contact%20you" target="_blank">
+    Contact Me on WhatsApp
+  </a>
+</div>
