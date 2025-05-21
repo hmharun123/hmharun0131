@@ -118,3 +118,12 @@
     <button type="submit" class="button">Send Message</button>
   </form>
 </div>
+<div class="portfolio-section">
+  <h2>My Portfolio</h2>
+  <p>Here are some examples of the data entry work I've done:</p>
+  <div class="buttons">
+    <a class="button" href="https://docs.google.com/spreadsheets/d/1FSV3CzDlRSDJHaumYrCcvKFcBKGedUhFU9qPDY6viW4/edit?usp=drivesdk" target="_blank">
+      View Sample Data Entry Work
+    </a>
+  </div>
+</div>
