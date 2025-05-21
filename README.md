@@ -42,7 +42,7 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
-    }
+    }<img src="images/certificate.jpg" alt="Certificate">
     a.button:hover {
       background-color: #0056b3;
     }
