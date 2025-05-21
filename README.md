@@ -100,3 +100,12 @@
   <p>Subscribe to my channel for tutorials, tips, and more!</p>
   <a class="button" href="https://youtube.com/@mdharun-n6j" target="_blank">Visit My YouTube</a>
 </div>
+<div class="portfolio-section">
+  <h2>My Portfolio</h2>
+  <p>Here are a few examples of my work:</p>
+  <div class="buttons">
+    <a class="button" href="https://example.com/project1" target="_blank">Project 1</a>
+    <a class="button" href="https://example.com/project2" target="_blank">Project 2</a>
+    <a class="button" href="https://example.com/project3" target="_blank">Project 3</a>
+  </div>
+</div>
