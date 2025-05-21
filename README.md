@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html><img src="images/harun.jpg">
+<img src="images/harun-logo.png">
+<img src="images/certificate.jpg">
 <html lang="en">
 <head>
   <meta charset="UTF-8">
