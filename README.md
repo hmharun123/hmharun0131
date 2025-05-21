@@ -109,3 +109,12 @@
     <a class="button" href="https://example.com/project3" target="_blank">Project 3</a>
   </div>
 </div>
+<div class="contact-section">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/mjvnavrw" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+    <button type="submit" class="button">Send Message</button>
+  </form>
+</div>
