@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Md. Harun Or Rashid</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HM Harun | Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+    * {
       margin: 0;
       padding: 0;
-      text-align: center;
-}
-/* Reset & Fonts */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-/* Preloader */
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }/* Preloader */
 #preloader {
   position: fixed;
   width: 100%;
@@ -103,6 +95,36 @@ section {
   padding: 60px 20px;
   text-align: center;
 }
+/* Testimonials */
+#testimonials {
+  background: #f0f0f0;
+}
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.testimonial h4 {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+/* Scroll Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Footer */
 footer {
   background: #333;
@@ -115,140 +137,47 @@ footer .social-links a {
   color: #fff;
   text-decoration: none;
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Md. Harun Or Rashid</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    .container {
-      padding: 30px;
-    }
-    img.profile {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border: 3px solid #444;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      font-size: 18px;
-      color: #444;
-      max-width: 600px;
-      margin: 10px auto;
-    }
-    .buttons {
-      margin-top: 25px;
-    }
-    a.button {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    a.button:hover {
-      background-color: #0056b3;
-    }
-    a.fiverr {
-      background-color: #28a745;
-    }
-    a.fiverr:hover {
-      background-color: #218838;
-    }
-    .certificate-section {
-      margin-top: 40px;
-    }
-    .certificate-section img {
-      max-width: 90%;
-      border: 2px solid #ccc;
-      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    }
-    .portfolio-section {
-      margin-top: 40px;
-    }
-    .contact-section {
-      margin-top: 50px;
-    }
-    input, textarea {
-      width: 80%;
-      max-width: 400px;
-      padding: 10px;
-      margin: 5px auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      margin-top: 10px;
-    }
-    
-<style>
-  .hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Back to Top */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .container {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .testimonial-container {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
     text-align: center;
-    height: 100vh;
-    background: linear-gradient(to right, #f0f2f5, #e2eafc);
-    padding: 20px;
   }
+}
 
-  .hero-content h1 {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 15px;
-  }
-
-  .hero-content h2 {
-    font-size: 28px;
-    color: #444;
-  }
-
-  .typing-text {
-    color: #007BFF;
-    font-weight: bold;
-    border-right: 2px solid #007BFF;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  @media screen and (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 32px;
-    }
-
-    .hero-content h2 {
-      font-size: 20px;
-    }
-    </style>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HM Harun | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  </style>
 </head>
 <body>
-
-  <!-- Preloader -->
   <div id="preloader">
     <div class="loader"></div>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar">
+  </div>  <nav class="navbar">
     <div class="container">
       <h1 class="logo">HM Harun</h1>
       <ul class="nav-links">
@@ -258,31 +187,31 @@ footer .social-links a {
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero">
+  </nav>  <section id="hero" class="fade-in">
     <div class="hero-content">
       <h1>Hi, I'm Harun</h1>
       <h2><span class="typed-text"></span><span class="cursor">|</span></h2>
       <a href="cv.pdf" class="btn" download>Download CV</a>
     </div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
+  </section>  <section id="about" class="fade-in">
     <h2>About Me</h2>
     <p>Your short bio goes here.</p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
+  </section>  <section id="projects" class="fade-in">
     <h2>My Projects</h2>
     <p>Project samples go here.</p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
+  </section>  <section id="testimonials" class="fade-in">
+    <h2>Testimonials</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"Harun is very talented and delivers high quality work!"</p>
+        <h4>- Client A</h4>
+      </div>
+      <div class="testimonial">
+        <p>"A great developer to work with. Highly recommended!"</p>
+        <h4>- Client B</h4>
+      </div>
+    </div>
+  </section>  <section id="contact" class="fade-in">
     <h2>Contact Me</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
@@ -290,26 +219,20 @@ footer .social-links a {
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
+  </section>  <footer>
     <p>© 2025 HM Harun. All rights reserved.</p>
     <div class="social-links">
       <a href="#">Facebook</a>
       <a href="#">LinkedIn</a>
       <a href="#">GitHub</a>
     </div>
-  </footer>
+  </footer><button id="backToTop" title="Back to Top">↑</button>
 
-  <!-- JavaScript -->
   <script>
-    // Preloader
     window.addEventListener("load", function () {
       document.getElementById("preloader").style.display = "none";
     });
 
-    // Typing Effect
     const texts = ["a Web Developer", "a Freelancer", "a Designer"];
     let count = 0;
     let index = 0;
@@ -330,61 +253,44 @@ footer .social-links a {
         setTimeout(type, 100);
       }
     })();
-  </script>
-</body>
+
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.3,
+      rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+    const topButton = document.getElementById("backToTop");
+    window.onscroll = function () {
+      topButton.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+    topButton.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  </script></body>
 </html>
-    <!-- ======= Hero Section ======= -->
-<section id="home" class="hero-section">
-  <div class="hero-content">
-    <h1>Hi, I'm Harun</h1>
-    <h2>I am a <span class="typing-text"></span></h2>
-  </div>
-</section>
-
-<!-- ======= Hero Section CSS ======= -->
 </style>
-
-<!-- ======= Typing Text Script ======= -->
-<script>
-  const text = ["Web Developer", "Designer", "Freelancer"];
-  const typingSpan = document.querySelector(".typing-text");
-  let i = 0, j = 0, isDeleting = false;
-
-  function type() {
-    let current = text[i];
-    if (isDeleting) {
-      typingSpan.textContent = current.substring(0, j--);
-    } else {
-      typingSpan.textContent = current.substring(0, j++);
-    }
-
-    if (!isDeleting && j === current.length) {
-      isDeleting = true;
-      setTimeout(type, 1000); // pause after complete
-    } else if (isDeleting && j === 0) {
-      isDeleting = false;
-      i = (i + 1) % text.length;
-    }
-
-    setTimeout(type, isDeleting ? 60 : 120);
-  }
-
-  document.addEventListener("DOMContentLoaded", type);
-</script>
-  </style>
 </head>
 <body>
   <div class="container">
-
-    <!-- Logo Section -->
+<!-- Logo Section -->
     <div style="margin-top: 20px;">
       <img src="harun-logo.png" alt="Harun Logo" style="width: 180px; border-radius: 15px;">
     </div>
-
-    <!-- Profile Photo -->
+ <!-- Profile Photo -->
     <img src="harun.jpg" alt="Harun's Photo" class="profile">
-
-    <h1>Md. Harun Or Rashid</h1>
+    </style>
+</head>
+    <body>
+   <h1>Md. Harun Or Rashid</h1>
     <p><strong>Address:</strong> Manikganj, Dhaka, Bangladesh</p>
     <p><strong>Email:</strong> hmharun796@gmail.com</p>
     <p><strong>Education:</strong> SSC, Lemubari Binoda Sundori High School</p>
