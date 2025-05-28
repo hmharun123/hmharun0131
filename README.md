@@ -77,6 +77,84 @@
     button {
       margin-top: 10px;
     }
+    <!-- ======= Hero Section ======= -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <h1>Hi, I'm Harun</h1>
+    <h2>I am a <span class="typing-text"></span></h2>
+  </div>
+</section>
+
+<!-- ======= Hero Section CSS ======= -->
+<style>
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f0f2f5, #e2eafc);
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+    color: #444;
+  }
+
+  .typing-text {
+    color: #007BFF;
+    font-weight: bold;
+    border-right: 2px solid #007BFF;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 32px;
+    }
+
+    .hero-content h2 {
+      font-size: 20px;
+    }
+  }
+</style>
+
+<!-- ======= Typing Text Script ======= -->
+<script>
+  const text = ["Web Developer", "Designer", "Freelancer"];
+  const typingSpan = document.querySelector(".typing-text");
+  let i = 0, j = 0, isDeleting = false;
+
+  function type() {
+    let current = text[i];
+    if (isDeleting) {
+      typingSpan.textContent = current.substring(0, j--);
+    } else {
+      typingSpan.textContent = current.substring(0, j++);
+    }
+
+    if (!isDeleting && j === current.length) {
+      isDeleting = true;
+      setTimeout(type, 1000); // pause after complete
+    } else if (isDeleting && j === 0) {
+      isDeleting = false;
+      i = (i + 1) % text.length;
+    }
+
+    setTimeout(type, isDeleting ? 60 : 120);
+  }
+
+  document.addEventListener("DOMContentLoaded", type);
+</script>
   </style>
 </head>
 <body>
