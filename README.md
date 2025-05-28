@@ -234,9 +234,7 @@ footer .social-links a {
     .hero-content h2 {
       font-size: 20px;
     }
-    <!DOCTYPE html>
-<html lang="en">
-<head>
+    </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HM Harun | Portfolio</title>
