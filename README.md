@@ -77,15 +77,7 @@
     button {
       margin-top: 10px;
     }
-    <!-- ======= Hero Section ======= -->
-<section id="home" class="hero-section">
-  <div class="hero-content">
-    <h1>Hi, I'm Harun</h1>
-    <h2>I am a <span class="typing-text"></span></h2>
-  </div>
-</section>
-
-<!-- ======= Hero Section CSS ======= -->
+    
 <style>
   .hero-section {
     display: flex;
@@ -125,7 +117,15 @@
     .hero-content h2 {
       font-size: 20px;
     }
-  }
+    <!-- ======= Hero Section ======= -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <h1>Hi, I'm Harun</h1>
+    <h2>I am a <span class="typing-text"></span></h2>
+  </div>
+</section>
+
+<!-- ======= Hero Section CSS ======= -->
 </style>
 
 <!-- ======= Typing Text Script ======= -->
