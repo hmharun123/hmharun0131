@@ -338,4 +338,189 @@ footer .social-links a {
 
   </div>
 </body>
+
+    const texts = ["a Web Developer", "a Freelancer", "a Designer"];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+      if (count === texts.length) count = 0;
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      document.querySelector(".typed-text").textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1000);
+      } else {
+        setTimeout(type, 100);
+      }
+    })();
+
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.3,
+      rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+    const topButton = document.getElementById("backToTop");
+    window.onscroll = function () {
+      topButton.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+    topButton.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  </script></body>
+</html>
+  </script>
+  <body>
+    <!-- ======= Contact Section ======= -->
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out for any project or just to say hello 👋</p>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><strong>📧 Email:</strong> harunrm900@gmail.com</p>
+      <p><strong>📞 Phone:</strong> +880 1648-131500</p>
+      <p><strong>📍 Location:</strong> Dhaka, Bangladesh</p>
+    </div>
+<!-- Contact Form -->
+    <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+<!-- MixItUp JS -->
+<script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+
+<!-- Lightbox2 CSS + JS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+  
+  <section id="portfolio" class="portfolio-section">
+  <h2>My Portfolio</h2>
+  <div class="portfolio-filters">
+    <button class="filter" data-filter="all">All</button>
+    <button class="filter" data-filter=".web">Web</button>
+    <button class="filter" data-filter=".design">Design</button>
+    <button class="filter" data-filter=".app">App</button>
+  </div>
+
+  <div class="portfolio-grid" id="portfolio-mix">
+    <div class="portfolio-item mix web">
+      <a href="assets/img/project1.jpg" data-lightbox="portfolio" data-title="Web Project 1">
+        <img src="assets/img/project1.jpg" alt="Project 1" />
+      </a>
+    </div>
+    <div class="portfolio-item mix design">
+      <a href="assets/img/project2.jpg" data-lightbox="portfolio" data-title="Design Project 2">
+        <img src="assets/img/project2.jpg" alt="Project 2" />
+      </a>
+    </div>
+    <div class="portfolio-item mix app">
+      <a href="assets/img/project3.jpg" data-lightbox="portfolio" data-title="App Project 3">
+        <img src="assets/img/project3.jpg" alt="Project 3" />
+      </a>
+    </div>
+    <div class="portfolio-item mix web">
+      <a href="assets/img/project4.jpg" data-lightbox="portfolio" data-title="Web Project 4">
+        <img src="assets/img/project4.jpg" alt="Project 4" />
+      </a>
+    </div>
+  </div>
+</section>
+<script>
+  var mixer = mixitup('#portfolio-mix');
+</script>
+<section id="portfolio" class="portfolio-section">
+  <h2>My Portfolio</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-item" onclick="openModal(0)">
+      <img src="assets/img/project1.jpg" alt="Project 1">
+      <h3>Project 1</h3>
+    </div>
+    <div class="portfolio-item" onclick="openModal(1)">
+      <img src="assets/img/project2.jpg" alt="Project 2">
+      <h3>Project 2</h3>
+    </div>
+    <div class="portfolio-item" onclick="openModal(2)">
+      <img src="assets/img/project3.jpg" alt="Project 3">
+      <h3>Project 3</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="portfolioModal" class="portfolio-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="Project Image">
+    <h2 id="modalTitle">Title</h2>
+    <p id="modalDesc">Description</p>
+    <a id="modalLink" href="#" target="_blank" class="modal-link">Live Preview</a>
+    <div class="modal-nav">
+      <button onclick="prevModal()">&#8592; Prev</button>
+      <button onclick="nextModal()">Next &#8594;</button>
+    </div>
+  </div>
+</div>
+<script>
+  const projects = [
+    {
+      title: "Project 1",
+      img: "assets/img/project1.jpg",
+      desc: "Description for project 1.",
+      link: "https://example.com/project1"
+    },
+    {
+      title: "Project 2",
+      img: "assets/img/project2.jpg",
+      desc: "Description for project 2.",
+      link: "https://example.com/project2"
+    },
+    {
+      title: "Project 3",
+      img: "assets/img/project3.jpg",
+      desc: "Description for project 3.",
+      link: "https://example.com/project3"
+    }
+ let currentIndex = 0;
+function openModal(index) {
+    currentIndex = index;
+    const project = projects[index];
+    document.getElementById("modalImg").src = project.img;
+    document.getElementById("modalTitle").innerText = project.title;
+    document.getElementById("modalDesc").innerText = project.desc;
+    document.getElementById("modalLink").href = project.link;
+    document.getElementById("portfolioModal").style.display = "flex";
+  }
+ function closeModal() {
+    document.getElementById("portfolioModal").style.display = "none";
+  }
+function nextModal() {
+    currentIndex = (currentIndex + 1) % projects.length;
+    openModal(currentIndex);
+  }
+function prevModal() {
+    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    openModal(currentIndex);
+  }
+</script>
+
 </html>
